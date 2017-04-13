@@ -11,12 +11,16 @@ namespace Lab_5
         static void Main(string[] args)
         {
 
+            //Delcaring variables.
+            int dice;
+            int dice2;
+            char yes;
+            int numSides;
 
+            //Do-while loop to process the game.
             do
             {
-                char yes;
-                int numSides;
-
+              
                 Console.WriteLine("Enter the number of sides for a pair of dice:");
                 // numSides = int.Parse(Console.ReadLine());
                 numSides = GetValidInteger();
@@ -28,11 +32,24 @@ namespace Lab_5
                 {
                     Random rnd = new Random();
 
-                    int dice = rnd.Next(1, numSides);
-                    int dice2 = rnd.Next(1, numSides);
+                     dice = rnd.Next(1, numSides);
+                     dice2 = rnd.Next(1, numSides);
 
                     Console.WriteLine(dice);
                     Console.WriteLine(dice2);
+
+                        if (dice == 1 && dice2 == 1)
+                    {
+                        Console.WriteLine("You got snake eyes!" );
+                    }
+                        else if (dice == 6 && dice2 == 6)
+                    {
+                        Console.WriteLine("You got box cars!");
+                    }
+                        else if (dice + dice2 == 7 || dice + dice2 == 11)
+                    {
+                        Console.WriteLine("You got craps!");
+                    }
 
                     Console.WriteLine("Thanks for playing!");
                     continue;
