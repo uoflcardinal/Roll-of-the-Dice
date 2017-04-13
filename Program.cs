@@ -21,8 +21,8 @@ namespace Lab_5
                 // numSides = int.Parse(Console.ReadLine());
                 numSides = GetValidInteger();
                 Console.WriteLine("Welcome to the Grand Circus Casino!  Roll the dice? (y/n):");
-                yes = char.Parse(Console.ReadLine());
-
+                //yes = char.Parse(Console.ReadLine());
+                yes = GetValidChar();
 
                 if (yes == 'y')
                 {
@@ -60,6 +60,17 @@ namespace Lab_5
                 Console.WriteLine("The input is not a number! Please enter a number! ");
             }
             return input;
+        }
+
+        public static char GetValidChar()
+        {
+            char Letter;
+
+            while (!char.TryParse(Console.ReadLine(), out Letter))
+            {
+                Console.WriteLine("The input is not 'y' or 'n'!");
+            }
+            return Letter;
         }
     }
 }
