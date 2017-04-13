@@ -1,0 +1,6 @@
+c:\users\paperspace\documents\visual studio 2015\Projects\Lab 5\bin\Debug\Lab 5.exe.config
+c:\users\paperspace\documents\visual studio 2015\Projects\Lab 5\bin\Debug\Lab 5.exe
+c:\users\paperspace\documents\visual studio 2015\Projects\Lab 5\bin\Debug\Lab 5.pdb
+c:\users\paperspace\documents\visual studio 2015\Projects\Lab 5\obj\Debug\Lab 5.csprojResolveAssemblyReference.cache
+c:\users\paperspace\documents\visual studio 2015\Projects\Lab 5\obj\Debug\Lab 5.exe
+c:\users\paperspace\documents\visual studio 2015\Projects\Lab 5\obj\Debug\Lab 5.pdb
